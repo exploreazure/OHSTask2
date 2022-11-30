@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "OHSTask2": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7165",
+      "launchBrowser": false
+    }
+  }
+}
