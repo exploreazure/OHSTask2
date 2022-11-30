@@ -5,6 +5,9 @@ The deploy.bicep file will deploy the following resources
 * Function App Resource Group
 * App Service Plan
 * Function App
+* CosmosDB SQL acccount
+* CosmosDB SQL database and container, with key
+* CosmosDB configured with serverless, read and write locations
 
 ## Parameters
 
