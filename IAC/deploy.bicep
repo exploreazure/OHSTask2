@@ -76,7 +76,7 @@ module databaseAccounts './modules/Microsoft.DocumentDB/databaseAccounts/deploy.
       {
         failoverPriority: 0
         isZoneRedundant: false
-        locationName: 'UK South'
+        locationName: location
       }
     ]
     name: cdbName
