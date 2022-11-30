@@ -28,6 +28,18 @@ Parameter Name: faName
 Type: string
 Description: Function App Name
 
+Parameter Name: cdbResourceGroupName
+Type: string
+Description: CosmosDB resource group name
+
+Parameter Name: cdbName
+Type: string
+Description: CosmosDB account name
+
+Parameter Name: sqlcontainername
+Type: string
+Description: CosmosDB SQL container name
+
 ## Azure CLI
 
 ```
@@ -39,6 +51,9 @@ az account show
 
 az account set --subscription "<subid>"
 
-az deployment sub create --location uksouth --template-file "deploy.bicep"
+Example:
+
+az deployment sub create --location uksouth --template-file 
+"deploy.bicep" --parameters faResourceGroup="rg-fa-iactest" aspName="aspohsiactest" faName="fnohsiactest01" location="uksouth" cdbResourceGroup="rg-db-iactest" cdbName="iacohscdbsql03" sqlcontainername="productcontainer"
 
 ```
